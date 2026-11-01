@@ -39,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background 250ms ease, color 250ms ease;
 }
+main { min-height: 100vh; display: flex; flex-direction: column; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 img { display: block; max-width: 100%; }
@@ -306,7 +307,7 @@ main:lang(zh-CN) :is(.section-label, .fact-grid span, .card-meta, .timeline-numb
 .project-gallery figcaption { color: var(--muted); }
 .gallery-thumbnail { background: #f5f5f3; }
 
-.site-footer { width: 100%; max-width: none; padding: 32px max(36px, calc((100vw - 1240px) / 2)); color: #aebbc0; background: var(--forest); border: 0; }
+.site-footer { width: 100%; max-width: none; margin-top: auto; padding: 32px max(36px, calc((100vw - 1240px) / 2)); color: #aebbc0; background: var(--forest); border: 0; }
 .site-footer strong { color: #f4f6f5; }
 
 .archive-root { color: var(--ink); background: #fff; }
