@@ -280,6 +280,7 @@ main:lang(zh-CN) :is(.section-label, .fact-grid span, .card-meta, .timeline-numb
 .research-project + .research-project { margin-top: 10px; }
 .research-project-meta span { color: var(--muted); font-size: 10px; letter-spacing: .08em; }
 .research-project h4 { max-width: 820px; margin: -4px 0 11px; font-family: Georgia, "Noto Serif SC", serif; font-size: 20px; line-height: 1.4; font-weight: 400; }
+.research-project-year { display: block; margin-bottom: 7px; color: var(--muted); font-size: 11px; letter-spacing: .08em; }
 .research-project p { max-width: 890px; margin: 0; color: #4c5255; font-size: 13px; line-height: 1.78; }
 .research-group-media { margin: 5px 0 0 64px; display: flex; justify-content: flex-start; }
 .research-group-media .project-toggle { margin-top: 0; }

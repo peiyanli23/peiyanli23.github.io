@@ -47,7 +47,7 @@ const copy = {
       ["量子计算云平台硬件研发组 | 北京量子信息科学研究院", "本科研究员 | 2026 年 5 月—至今"],
     ],
     pastGroup: "过往项目",
-    pastRole: "计算物理项目 | 2023",
+    pastRole: "早期项目",
     galleryOpen: "查看图片",
     galleryClose: "收起照片",
     tinGallery: [
@@ -216,7 +216,7 @@ const copy = {
       ["Quantum Computing Cloud Platform Hardware R&D Group | Beijing Academy of Quantum Information Sciences", "Undergraduate Researcher | May 2026 – Present"],
     ],
     pastGroup: "Past Project",
-    pastRole: "Computational Physics Project | 2023",
+    pastRole: "Earlier projects",
     galleryOpen: "View images",
     galleryClose: "Close gallery",
     tinGallery: [
@@ -480,7 +480,10 @@ export default function Home() {
                       const isProjectExpanded = expandedProject === galleryIndex;
                       return (
                       <article className="research-project" key={card.title}>
-                        <div><h4>{card.title}</h4><p>{card.body}</p></div>
+                        <div>
+                          {isPastProject && <span className="research-project-year">{card.year}</span>}
+                          <h4>{card.title}</h4><p>{card.body}</p>
+                        </div>
                         {isPastProject && <>
                           <button className="project-toggle" aria-expanded={isProjectExpanded} aria-controls={projectGalleryId} onClick={() => setExpandedProject(isProjectExpanded ? null : galleryIndex)}>
                             <span>{isProjectExpanded ? t.galleryClose : t.galleryOpen}</span><b aria-hidden="true">{isProjectExpanded ? "−" : "+"}</b>
